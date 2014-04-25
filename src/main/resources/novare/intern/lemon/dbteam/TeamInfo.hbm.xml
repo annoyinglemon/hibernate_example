@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 04 22, 14 8:14:25 PM by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="novare.intern.lemon.user.TeamInfo" table="team_info">
+        <id name="teamName" type="string">
+            <column name="teamName" length="60" />
+            <generator class="assigned" />
+        </id>
+        <property name="midLaner" type="string">
+            <column name="mid_laner" length="30" />
+        </property>
+        <property name="hardCarry" type="string">
+            <column name="hard_carry" length="30" />
+        </property>
+        <property name="hardLaner" type="string">
+            <column name="hard_laner" length="30" />
+        </property>
+        <property name="support1" type="string">
+            <column name="support1" length="30" />
+        </property>
+        <property name="support2" type="string">
+            <column name="support2" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>
